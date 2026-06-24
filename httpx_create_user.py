@@ -1,6 +1,6 @@
 import httpx
 
-from tools.facers import get_random_email
+from tools.fakers import get_random_email
 
 payload = {
     "email": get_random_email(),
