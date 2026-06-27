@@ -5,12 +5,12 @@ from httpx import Response
 from clients.api_client import APIClient
 
 
-class GetExersisesQueryDict(TypedDict):
+class GetExercisesQueryDict(TypedDict):
     """Описание структуры запроса на получение списка упражнений."""
     courseId: str
 
 
-class CreateExercisesQueryDict(TypedDict):
+class CreateExercisesRequestDict(TypedDict):
     """Описание структуры запроса на создание упражнения."""
     title: str
     courseId: str
@@ -21,7 +21,7 @@ class CreateExercisesQueryDict(TypedDict):
     estimatedTime: str
 
 
-class UpdateExercisesQueryDict(TypedDict):
+class UpdateExercisesRequestDict(TypedDict):
     """Описание структуры запроса на обновление упражнения."""
     title: str | None
     maxScore: int | None
@@ -34,7 +34,7 @@ class UpdateExercisesQueryDict(TypedDict):
 class ExercisesClient(APIClient):
     """Клиент для работы с /api/v1/exercises"""
 
-    def get_exercises_api(self, query: GetExersisesQueryDict) -> Response:
+    def get_exercises_api(self, query: GetExercisesQueryDict) -> Response:
         """Метод получения списка упражнений.
 
         :param query: Словарь с exerciseId.
@@ -50,7 +50,7 @@ class ExercisesClient(APIClient):
         """
         return self.get(url=f"/api/v1/exercises{exercise_id}")
 
-    def create_exercise_api(self, request: CreateExercisesQueryDict) -> Response:
+    def create_exercise_api(self, request: CreateExercisesRequestDict) -> Response:
         """Метод создания упражнения.
 
         :param request: Словарь с title, courseId, maxScore, minScore, orderIndex,
@@ -59,7 +59,7 @@ class ExercisesClient(APIClient):
         """
         return self.post(url="/api/v1/exercises", json=request)
 
-    def update_exercise_api(self, exercise_id: str, request: UpdateExercisesQueryDict) -> Response:
+    def update_exercise_api(self, exercise_id: str, request: UpdateExercisesRequestDict) -> Response:
         """Метод обновления упражнения.
 
         :param exercise_id: Идентификатор упражнения.
