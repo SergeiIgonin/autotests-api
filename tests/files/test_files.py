@@ -43,6 +43,7 @@ class TestFiles:
 
         validate_json_schema(response.json(), response_data.model_json_schema())
 
+
     @allure.tag(AllureTag.GET_ENTITY)
     @allure.story(AllureStory.GET_ENTITY)
     @allure.title("Get file")
@@ -56,6 +57,7 @@ class TestFiles:
         assert_get_file_response(response_data, function_file.response)
 
         validate_json_schema(response.json(), response_data.model_json_schema())
+
 
     @allure.tag(AllureTag.DELETE_ENTITY)
     @allure.story(AllureStory.DELETE_ENTITY)
