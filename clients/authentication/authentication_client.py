@@ -2,12 +2,10 @@ import allure
 from httpx import Response
 
 from clients.api_client import APIClient
-# Добавили импорт моделей
 from clients.authentication.authentication_schema import LoginRequestSchema, RefreshRequestSchema, LoginResponseSchema
 from clients.public_http_builder import get_public_http_client
+from tools.routes import APIRoutes  # Импортируем enum APIRoutes
 
-
-# Старые модели с использованием TypedDict были удалены
 
 class AuthenticationClient(APIClient):
     """
@@ -22,9 +20,9 @@ class AuthenticationClient(APIClient):
         :param request: Словарь с email и password.
         :return: Ответ от сервера в виде объекта httpx.Response
         """
+        # Вместо /api/v1/authentication используем APIRoutes.AUTHENTICATION
         return self.post(
-            "/api/v1/authentication/login",
-            # Сериализуем модель в словарь с использованием alias
+            f"{APIRoutes.AUTHENTICATION}/login",
             json=request.model_dump(by_alias=True)
         )
 
@@ -36,11 +34,12 @@ class AuthenticationClient(APIClient):
         :param request: Словарь с refreshToken.
         :return: Ответ от сервера в виде объекта httpx.Response
         """
+        # Вместо /api/v1/authentication используем APIRoutes.AUTHENTICATION
         return self.post(
-            "/api/v1/authentication/refresh",
-            # Сериализуем модель в словарь с использованием alias
+            f"{APIRoutes.AUTHENTICATION}/refresh",
             json=request.model_dump(by_alias=True)
         )
+
 
     # Теперь используем pydantic-модель для аннотации
     def login(self, request: LoginRequestSchema) -> LoginResponseSchema:
