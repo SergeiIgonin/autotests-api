@@ -56,15 +56,14 @@ jobs:
         run: |
           pytest -m regression --alluredir=allure-results --numprocesses 2  # Запускаем тесты, отмеченные как "regression", генерируем результаты для Allure
 
-      # 8. Шаг генерации и публикации Allure-отчёта
-      - name: Generate and publish Allure report
-        uses: allure-framework/allure-report-publisher@v1
+      # 8. Клонируем ветку gh-pages (для получения истории)
+      - name: Get Allure history
+        uses: actions/checkout@v4
         if: always()
+        continue-on-error: true
         with:
-          artifacts-path: allure-results
-          report-path: allure-report
-          gh-pages-branch: gh-pages
-          keep-reports: 20
+          ref: gh-pages
+          path: gh-pages
 
       # 9. Копируем историю из предыдущего отчёта (если она есть)
       - name: Copy history from previous report
