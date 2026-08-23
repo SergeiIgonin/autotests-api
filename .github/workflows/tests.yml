@@ -56,7 +56,7 @@ jobs:
         run: |
           pytest -m regression --alluredir=allure-results --numprocesses 2  # Запускаем тесты, отмеченные как "regression", генерируем результаты для Allure
 
-      # 8. Клонируем ветку gh-pages (для получения истории)
+            # 8. Клонируем ветку gh-pages для истории
       - name: Get Allure history
         uses: actions/checkout@v4
         if: always()
@@ -65,7 +65,7 @@ jobs:
           ref: gh-pages
           path: gh-pages
 
-      # 9. Копируем историю из предыдущего отчёта (если она есть)
+      # 9. Копируем историю из предыдущего отчёта (если есть)
       - name: Copy history from previous report
         if: always()
         run: |
@@ -73,12 +73,15 @@ jobs:
             cp -r gh-pages/history allure-results/
           fi
 
-      # 10. Устанавливаем Allure CLI
+      # 10. Устанавливаем Allure CLI (стабильная версия)
       - name: Install Allure
         if: always()
         run: |
-          curl -sL https://get.allure-toolkit.com | bash
-          sudo mv allure /usr/local/bin/
+          curl -L -o allure.zip https://github.com/allure-framework/allure2/releases/download/2.30.0/allure-2.30.0.zip
+          unzip -q allure.zip -d /tmp/
+          sudo mv /tmp/allure-2.30.0 /opt/allure
+          sudo ln -s /opt/allure/bin/allure /usr/local/bin/allure
+          allure --version   # проверяем, что установилось
 
       # 11. Генерируем отчёт Allure с историей
       - name: Generate Allure report
@@ -94,4 +97,4 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages
           publish_dir: ./allure-report
-          keep_files: true   # сохраняем старые отчёты, чтобы история не терялась
+          keep_files: true
