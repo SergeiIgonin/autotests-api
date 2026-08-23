@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA4LTIzVDIyOjExOjUwLjA4ODk3MiIsInVzZXJfaWQiOiI5MjM1MjY0NS04OTdjLTQ2YjAtYjg2NS0yZTQ0MGVhNmEyNDIifQ.xXsLyTftYMZD9xfeCvw8pxrcAgJ_mazd5KvU1Ji189s' \
+  -H 'content-length: 364' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Laugh place general current.","maxScore":65,"minScore":28,"description":"Can wish inside these back red coach. Fight skin the community.\nEasy far stage inside. President star across offer mind environmental place.","estimatedTime":"1 weeks","previewFileId":"09c73d62-378c-4177-a0a0-d3685e2a048c","createdByUserId":"92352645-897c-46b0-b865-2e440ea6a242"}'

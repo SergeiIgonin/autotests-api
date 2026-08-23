@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA4LTIzVDIyOjExOjUxLjg0ODQ2MSIsInVzZXJfaWQiOiJiNjY3MmU5Mi0xYThiLTQ2NDktODRkZC04N2E4ZTg5NzM5ZTUifQ.ddfu8s5uvxXWO4B1M8aqVqGgF0RtYbrsnFsvJVcvAsY' \
+  -H 'content-length: 410' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Foreign board set identify let two.","maxScore":70,"minScore":20,"description":"Area program process some thus. Hair could matter hundred take whatever six. Mention officer suggest want.\nRaise there cover during. Education work hard town. Your money specific.","estimatedTime":"2 weeks","previewFileId":"5e609400-9dd3-4010-a9db-550c48693ca3","createdByUserId":"b6672e92-1a8b-4649-84dd-87a8e89739e5"}'

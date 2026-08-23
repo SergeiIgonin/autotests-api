@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA4LTIzVDIyOjExOjQ4Ljc3ODcwMiIsInVzZXJfaWQiOiIzZWIyZDc4MC03NTlmLTQ1MGItOGY2My04Y2IxZTUwNmNkYmEifQ.BtK29g8Brvz6GBxo2jPfmD4u4blNXlM8HwJ77tT-c40' \
+  -H 'content-length: 375' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Station present effect.","maxScore":90,"minScore":17,"description":"Several back data finally I. Citizen way rock teach other color.\nTruth your minute different such data south. Remember still paper perhaps soon trip friend.","estimatedTime":"6 weeks","previewFileId":"7eb06a65-4265-4455-8f7d-00b247743b64","createdByUserId":"3eb2d780-759f-450b-8f63-8cb1e506cdba"}'

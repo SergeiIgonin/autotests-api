@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/courses/9ffc47ef-0b98-4603-b2e6-20d4a5443ad1' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA4LTIzVDIyOjExOjQ2Ljk1NzY5NiIsInVzZXJfaWQiOiI0N2Y0MmQyYi0zMjdmLTQ5ZTYtYjlmNi04NThjNTg3YTAxMjIifQ.3-uVeEiJrxul3JZQGjDRgjFPz6tvOJMetmbK-ytntRA' \
+  -H 'content-length: 241' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Follow serve local state add.","maxScore":100,"minScore":9,"description":"Minute will because paper large coach. Government relate although enjoy method campaign wrong front. None structure while listen.","estimatedTime":"2 weeks"}'

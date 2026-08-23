@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA4LTIzVDIyOjExOjQ2Ljk1NzY5NiIsInVzZXJfaWQiOiI0N2Y0MmQyYi0zMjdmLTQ5ZTYtYjlmNi04NThjNTg3YTAxMjIifQ.3-uVeEiJrxul3JZQGjDRgjFPz6tvOJMetmbK-ytntRA' \
+  -H 'content-length: 388' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Rather citizen then arm.","maxScore":86,"minScore":27,"description":"Both story arm such current. Land see if rate picture remember memory.\nUpon model site sound contain thousand. Process decision bed church. Car chance training cut sit.","estimatedTime":"8 weeks","previewFileId":"f24c8e86-cac6-43e2-bb07-1df1b3a7a284","createdByUserId":"47f42d2b-327f-49e6-b9f6-858c587a0122"}'

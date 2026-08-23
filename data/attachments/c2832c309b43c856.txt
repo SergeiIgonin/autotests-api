@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA4LTIzVDIyOjExOjQ5LjA4NzE1OCIsInVzZXJfaWQiOiJmNmNjNTVlOS01N2U2LTRmMjktYWRkOC1iOWI4ODVmYjVjYjUifQ.SjhlZ_alP5U43P2NIkGz7XdEj29l9lpkSSjMER1lgXY' \
+  -H 'content-length: 336' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Again rock produce increase why start physical.","courseId":"c2330acd-30e7-43ab-bbce-e0f9339d3dba","maxScore":100,"minScore":20,"orderIndex":61,"description":"Another against source service behavior. As civil although management late to work. Whether score itself call piece mouth conference blood.","estimatedTime":"6 weeks"}'

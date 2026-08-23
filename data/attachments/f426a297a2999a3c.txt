@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA4LTIzVDIyOjExOjUwLjM5NjIwMCIsInVzZXJfaWQiOiJiYjcxZTlmNC01MmUyLTQzYjctYTNhYi1lNTVjOTM3NWU4NWQifQ.tBWQh6tHQGTV-UYg1d1EvJ4WHRxuKNTiSGy50loWE0w' \
+  -H 'content-length: 392' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Your present form first young choose.","maxScore":71,"minScore":27,"description":"Collection stop movie me.\nFuture three PM data news others field quality. Year cell want capital bank every season. Hot agree detail discuss turn whom example.","estimatedTime":"8 weeks","previewFileId":"15ae72b4-1ee7-4758-9864-a758045e802d","createdByUserId":"bb71e9f4-52e2-43b7-a3ab-e55c9375e85d"}'

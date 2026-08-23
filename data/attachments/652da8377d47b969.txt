@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA4LTIzVDIyOjExOjUxLjg0ODQ2MSIsInVzZXJfaWQiOiJiNjY3MmU5Mi0xYThiLTQ2NDktODRkZC04N2E4ZTg5NzM5ZTUifQ.ddfu8s5uvxXWO4B1M8aqVqGgF0RtYbrsnFsvJVcvAsY' \
+  -H 'content-length: 340' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Report establish wrong information.","courseId":"bd07ee64-0c23-4787-8a64-13bd62140e53","maxScore":79,"minScore":3,"orderIndex":45,"description":"Apply book on yes. Peace voice in office every million edge shake.\nLevel beat forget explain. Six game issue article cell. Themselves despite bring nothing.","estimatedTime":"7 weeks"}'
