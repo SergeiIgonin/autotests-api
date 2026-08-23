@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA4LTIzVDIyOjA1OjE2LjkxNTg4OSIsInVzZXJfaWQiOiI3NzU1ZTI1My0wOTAzLTRiMzEtYjlmZC1jYjBlYjM2ZGJlNmYifQ.4eeS0bl96Ele_vD42o69UcRcoppK921O23cx17IC-SI' \
+  -H 'content-length: 297' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Environment once source writer rich owner.","courseId":"95649eab-62e6-4a54-a68b-e12dfe23f97b","maxScore":88,"minScore":14,"orderIndex":45,"description":"Car medical new. Hold section campaign send mind none. Scientist art maybe affect successful apply throw.","estimatedTime":"10 weeks"}'

@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA4LTIzVDIyOjA1OjE2LjcwMDA0MSIsInVzZXJfaWQiOiI5MzJkM2MyOC1lY2I5LTQ3ZWEtODExYi0zMzZiZDA2MDQ5YTkifQ.wQzPCGHM1sRdJbmsfdlVXWLAnUx6EIJB9eAc798htxo' \
+  -H 'content-length: 401' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Work responsibility create use continue.","maxScore":52,"minScore":5,"description":"Human high money account tree executive. Low way front statement herself pass community.\nPractice north thus apply growth reason physical. Decide power only purpose.","estimatedTime":"10 weeks","previewFileId":"09c3e562-6634-46e5-9a93-fc5bc3e941f8","createdByUserId":"932d3c28-ecb9-47ea-811b-336bd06049a9"}'

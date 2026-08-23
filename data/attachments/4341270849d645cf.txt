@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA4LTIzVDIyOjA1OjE0LjYyNzA1NiIsInVzZXJfaWQiOiI1MjNmYTFiOS1mMzJlLTRmOTQtOTAxYS05OTE3OTNkZGM0MTAifQ.TsL9pLZQxvWBJZCMDoPImiDakRcGGlUHmNl4wS7r_Gw' \
+  -H 'content-length: 396' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Mrs personal owner budget hand lead easy.","maxScore":52,"minScore":8,"description":"Size treat parent democratic significant pressure. Artist direction nor center likely but.\nPage relate without believe appear. Already church stock guy capital.","estimatedTime":"4 weeks","previewFileId":"f0db3288-09b4-4d2b-a125-efe3a7b82eb6","createdByUserId":"523fa1b9-f32e-4f94-901a-991793ddc410"}'

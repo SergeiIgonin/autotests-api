@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA4LTIzVDIyOjA1OjEzLjE2NTA2NCIsInVzZXJfaWQiOiJmMGRjOWUyNS1kNDY2LTRkYzctOTc3ZS0zNWYyYzAxYzBhOWUifQ.e0AwcyxnoVIY3tIe8lly6zAlFqb_W2mHAxsPKyuywGU' \
+  -H 'content-length: 411' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Strong inside expect past federal maintain five sister.","maxScore":82,"minScore":13,"description":"Chance ball case might then. Really people situation especially network create.\nMilitary some wait city everyone century. Hard participant include show central.","estimatedTime":"5 weeks","previewFileId":"44ce714d-ccb9-40af-a229-3b3fc9a4ad2e","createdByUserId":"f0dc9e25-d466-4dc7-977e-35f2c01c0a9e"}'

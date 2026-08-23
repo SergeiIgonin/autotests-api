@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA4LTIzVDIyOjA1OjE1LjYxNjc2OCIsInVzZXJfaWQiOiI4ZDY0ZTk1Ny02NjQwLTQxNmQtYmQ3Yi04NzUzZTM0MmQ2M2MifQ.pCk_-aNlhgFNxP7y4S4haz8vJCMO2SxrnRZGtPYmvaM' \
+  -H 'content-length: 361' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Experience group difficult sea force pretty cultural.","maxScore":96,"minScore":5,"description":"Along just power sometimes goal. Day art nation itself onto yes dream. Professional memory end order how eat need.","estimatedTime":"6 weeks","previewFileId":"b43e93d7-9f9d-431a-aad6-27393c2110ca","createdByUserId":"8d64e957-6640-416d-bd7b-8753e342d63c"}'

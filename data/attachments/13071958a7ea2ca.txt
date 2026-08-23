@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA4LTIzVDIyOjA1OjE1LjgzMzY0OSIsInVzZXJfaWQiOiIwMzliYjVjNC05OGU4LTQ2M2QtYWRiMC01NWE5YzYzZTg1YmUifQ.3tYiCWTD9lNT_-dLqqsOR2LtQjDLz9oILfAFhovqEkM' \
+  -H 'content-length: 314' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Character service these tend have two story.","maxScore":76,"minScore":4,"description":"Tv rise without. Itself something sea relationship blood west. Last be most.","estimatedTime":"9 weeks","previewFileId":"98b41c6c-10e1-4917-b038-226b2687517b","createdByUserId":"039bb5c4-98e8-463d-adb0-55a9c63e85be"}'

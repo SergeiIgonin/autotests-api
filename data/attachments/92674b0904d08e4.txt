@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA4LTIzVDIyOjA1OjEzLjY3Mzg0NyIsInVzZXJfaWQiOiJlNDk3YmU4Ny1iYTUxLTRhYjEtYmIzMC02OGY2MGMxYTY0YTMifQ.oJnUKBgy-GtNEJeioJqEe1uEojDx8T-EAzqD-hYspkc' \
+  -H 'content-length: 423' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Staff form audience service place moment order become.","maxScore":92,"minScore":8,"description":"Light kitchen exactly represent cut more.\nDetail line issue also need. Successful you travel talk.\nPeace factor baby wrong sense its. Line issue fill. Wide among hotel face.","estimatedTime":"4 weeks","previewFileId":"9fd4cbc9-db5a-4947-923a-1033403284fd","createdByUserId":"e497be87-ba51-4ab1-bb30-68f60c1a64a3"}'
